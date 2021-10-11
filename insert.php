@@ -25,8 +25,10 @@
             $con->close();
             
             echo "<center><h1>New records created successfully</h1></center>"; 
-            echo "<center><h2>Click the below button to redirect to the forms page</h2></center>"
+            echo "<center><h2>You have the below options to perform</h2></center>"
         ?>  
+        <center><a href="all_records.php">View All Records</a></center> <br>
         <center><a href="forms.html">Back</a></center>
+        
     </body>
 </html>

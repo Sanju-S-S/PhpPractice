@@ -16,8 +16,8 @@
             $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
             $count = mysqli_num_rows($result);    
     ?>  
-    <?php if($count == 1) : ?>
-                <h1>You are done</h1>
+    <?php if($count == 1) :
+        header("Location: forms.html"); ?>
     <?php else :?>
         <h1> Login failed. Invalid username or password.</h1>
     <?php endif; ?>
