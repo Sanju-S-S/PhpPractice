@@ -17,9 +17,9 @@
 
 <?php
 
-include "connection.php"; // Using database connection file here
+include "connection.php"; 
 
-$records = mysqli_query($con,"select * from userdb"); // fetch data from database
+$records = mysqli_query($con,"select * from userdb"); 
 
 while($data = mysqli_fetch_array($records))
 {
