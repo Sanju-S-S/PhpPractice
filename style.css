@@ -1,8 +1,8 @@
 body{   
-    background: #eee;  
+    background: rgb(196, 44, 44);  
 }  
 #frm{  
-    border: solid gray 1px;  
+    border: solid rgb(0, 0, 0) 1px;  
     width:25%;  
     border-radius: 2px;  
     margin: 120px auto;  
@@ -14,4 +14,12 @@ body{
     background: #337ab7;  
     padding: 7px;  
     margin-left: 70%;  
-}  
+}
+
+#txtbox{
+    margin-left: 20%;    
+}
+
+h4{
+    padding-left: 25%;
+}

@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">   
+	</head>
 	<body>
-		<center>
-			<h2>Welcome to the Forms Page</h2>
+			<div id="frm">
+			<h2 style="text-align: center;">Welcome to the Forms Page</h2><br>
 
-			<form action="insert.php" method="post">
-				Name:<br> 
-				<input type="text" name="name"><br>
-				Password:<br> 
-				<input type="text" name="password"><br>
-				Email:<br> 
-				<input type="text" name="email"><br>
-				Phone:<br> 
-				<input type="number" name="phone"><br>
+			<form name="f2" action="insert.php" onsubmit="return validation()" method="POST">
+				<h4 style="margin-left: 10%;">
+					Name:<input type="text" name="name" style="margin-left: 20%;">
+					<br><Br>
+				</h4>
+				
+				<h4 style="margin-left: 10%;">
+					Password: <input type="password" name="password" style="margin-left: 12%;">
+					<br> <br>
+				</h4>
+
+				<h4 style="margin-left: 10%;">
+					Email: <input type="text" name="email" style="margin-left: 19%;">
+					<br><br>
+				</h4>
+
+				<h4 style="margin-left: 10%;">
+					Phone: <input type="number" name="phone" style="margin-left: 19%;">
+					<br><br>
+				</h4>
+
 				<br><br>
-				<input type="submit">
+				<input type="submit" style="margin-left: auto; margin-right: auto; display: block;">
 			</form>
-		</center>
+		</div>
+
+		<script>  
+            function validation()  
+            {  
+                var nam=document.f2.name.value;  
+                var ps=document.f2.password.value;  
+				var em=document.f2.email.value;
+				var ph=document.f2.phone.value;
+
+                if(nam.length=="") {  
+                    alert("User Name field is empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(ps.length=="") {  
+                        alert("Password field is empty");  
+                        return false;  
+                    }   
+                    if (em.length=="") {  
+                    	alert("Email field is empty");  
+                    	return false;  
+                    } 
+					if (ph.length=="" || ph.length!=10 || ph!=Number) {  
+                    	alert("Phone Number field is empty or Check it once.");  
+                    	return false;  
+                    }   
+                }                             
+            }  
+        </script>  
+
 	</body>
 </html> 
