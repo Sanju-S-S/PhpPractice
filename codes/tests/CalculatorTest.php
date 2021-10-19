@@ -1,5 +1,7 @@
 <?php
 
+include 'calculator.php';
+
 use PHPUnit\Framework\TestCase;
 
 require 'calculator.php';
