@@ -6,14 +6,15 @@
 <body>  
     <div id = "frm">  
         <h1>Login</h1>  
+        <br>
         <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
             <p>  
-                <label> UserName: </label>  
-                <input type = "text" id ="user" name  = "user" />  
+                <label> Username: </label>  
+                <input type = "text,hidden" id ="user" name  = "user" />  
             </p>  
             <p>  
-                <label> Password: </label>  
-                <input type = "password" id ="pass" name  = "pass" />  
+                <label> Password : </label>  
+                <input type = "password,hidden" id ="pass" name  = "pass" />  
             </p>  
             <p>     
                 <input type =  "submit" id = "btn" value = "Login" />  
